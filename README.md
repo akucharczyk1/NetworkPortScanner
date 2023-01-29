@@ -1,7 +1,10 @@
 <h1>Secure Password Generator</h1>
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+This project generates a secure password of a specified length, and gives the option to include special characters in the password.
+It uses the secrets module, a cryptographically secure random number generator, to generate a random password that is made up of a combination of letters, numbers and special characters.
+<br />
+ The user is prompted to enter the desired length of the password and whether or not to include special characters in the password. The generated password is then printed to the console. This script is useful for creating secure and unique passwords for different accounts and applications.
 <br />
 
 
@@ -9,39 +12,25 @@ Project consists of a simple PowerShell script that walks the user through "zero
 
 - <b>Python 3.6+</b> 
 
-<h2>Environments Used </h2>
-
-- <b>Windows 10</b> (21H2)
 
 <h2>Program walk-through:</h2>
 
 <p align="center">
 Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5hY6ukD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Enter Character Length:  <br/>
+<img src="https://i.imgur.com/AjWUKdD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Select yes/no to special characters: <br/>
+<img src="https://i.imgur.com/oxAkh7v.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+View/Copy your generated password:  <br/>
+<img src="https://i.imgur.com/CkiGeMF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <!--
